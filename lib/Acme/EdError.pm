@@ -57,6 +57,8 @@ Help support has not yet been implemented in this module.
 
 ed(1)
 
+http://github.com/thrig/Acme-EdError/tree/master
+
 =head1 AUTHOR
 
 Jeremy Mates, E<lt>jmates@sial.orgE<gt>

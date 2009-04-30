@@ -6,3 +6,5 @@ make test
 make install
 
 Run perldoc(1) on the Acme::EdError module for more documentation.
+
+http://github.com/thrig/Acme-EdError/tree/master
