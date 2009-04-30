@@ -8,6 +8,8 @@
 
 package Acme::EdError;
 
+require 5.006;
+
 $VERSION = '0.01';
 
 $SIG{__DIE__}  = sub { print STDERR "?\n"; exit 255 };

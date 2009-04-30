@@ -5,5 +5,5 @@ MANIFEST
 README
 t/1.t
 t/pod.t
-eg/show_errors
+eg/show-errors
 META.yml
