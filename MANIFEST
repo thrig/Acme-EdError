@@ -1,0 +1,9 @@
+lib/Acme/EdError.pm
+LICENSE
+Makefile.PL
+MANIFEST
+README
+t/1.t
+t/pod.t
+eg/show_errors
+META.yml
