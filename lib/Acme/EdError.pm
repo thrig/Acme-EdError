@@ -12,8 +12,21 @@ require 5.006;
 
 $VERSION = '0.01';
 
-$SIG{__DIE__}  = sub { print STDERR "?\n"; exit 255 };
-$SIG{__WARN__} = sub { print STDERR "?\n"; };
+sub takeover_signals {
+  $SIG{__DIE__} = sub { print STDERR "?\n"; exit 255 };
+  $SIG{__WARN__} = sub { print STDERR "?\n"; };
+}
+
+BEGIN {
+  takeover_signals();
+}
+
+# And, in the event someone has taken the signals back...
+takeover_signals();
+
+END {
+  takeover_signals();
+}
 
 1;
 __END__
