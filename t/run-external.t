@@ -1,3 +1,5 @@
+#!/usr/bin/perl -w
+#
 # Tests via external command runs.
 
 use warnings;

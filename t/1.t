@@ -1,3 +1,5 @@
+#!/usr/bin/perl -w
+#
 # Initial "does it load and perform basic operations" tests
 
 use warnings;
