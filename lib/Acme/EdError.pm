@@ -1,3 +1,5 @@
+# -*- Perl -*-
+#
 # Implements ed(1) error handling. Run perldoc(1) on this module for
 # additional documentation.
 #
