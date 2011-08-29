@@ -63,7 +63,7 @@ http://github.com/thrig/Acme-EdError/tree/master
 
 =head1 AUTHOR
 
-Jeremy Mates, E<lt>jmates@sial.orgE<gt>
+Jeremy Mates, E<lt>jmates@cpan.orgE<gt>
 
 =head1 COPYRIGHT
 
