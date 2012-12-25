@@ -1,11 +1,35 @@
-use inc::Module::Install;
+use strict;
+use warnings;
+use ExtUtils::MakeMaker;
 
-# Define metadata
-name 'Acme-EdError';
-all_from 'lib/Acme/EdError.pm';
+my %params = (
+  NAME         => 'Acme::EdError',
+  VERSION_FROM => 'lib/Acme/EdError.pm',
+  PREREQ_PM    => {
+    'IPC::Open3' => 1.0106,
+    'Test::More' => 0.86,
+  },
+  ( $] >= 5.005
+    ? (
+      ABSTRACT_FROM => 'lib/Acme/EdError.pm',
+      AUTHOR        => 'Jeremy Mates <jmates@cpan.org>'
+      )
+    : ()
+  ),
+);
 
-# Specific dependencies
-test_requires 'Test::More' => '0.86';
-test_requires 'IPC::Open3' => '1.0106';
+if ( $ExtUtils::MakeMaker::VERSION =~ /^\d\.\d\d$/ and $ExtUtils::MakeMaker::VERSION > 6.30 ) {
+  $params{LICENSE} = 'perl';
+}
 
-WriteAll;
+if ( $ExtUtils::MakeMaker::VERSION ge '6.46' ) {
+  $params{META_MERGE} = {
+    resources => {
+      homepage   => 'https://github.com/thrig/Acme-EdError',
+      license    => 'http://dev.perl.org/licenses/',
+      repository => 'https://github.com/thrig/Acme-EdError',
+    }
+  };
+}
+
+WriteMakefile(%params);
