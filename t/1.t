@@ -1,4 +1,4 @@
-#!/usr/bin/perl -w
+#!perl
 #
 # Initial "does it load and perform basic operations" tests
 

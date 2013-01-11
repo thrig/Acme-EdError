@@ -1,4 +1,4 @@
-#!/usr/bin/perl -w
+#!perl
 #
 # Tests via external command runs.
 
