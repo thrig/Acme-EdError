@@ -3,16 +3,19 @@
 # Implements ed(1) error handling. Run perldoc(1) on this module for
 # additional documentation.
 #
-# Copyright 2009,2012 by Jeremy Mates.
+# Copyright 2009,2012-2013 by Jeremy Mates.
 #
 # This module is free software; you can redistribute it and/or modify it
 # under the Artistic license.
 
 package Acme::EdError;
 
+use strict;
+use warnings;
+
 require 5.006;
 
-$VERSION = '9.05';
+our $VERSION = '9.06';
 
 sub takeover_signals {
   $SIG{__DIE__} = sub { print STDERR "?\n"; exit 255 };
@@ -69,7 +72,7 @@ Jeremy Mates, E<lt>jmates@cpan.orgE<gt>
 
 =head1 COPYRIGHT
 
-Copyright 2009,2012 by Jeremy Mates.
+Copyright 2009,2012-2013 by Jeremy Mates.
 
 This module is free software; you can redistribute it and/or modify it
 under the Artistic license.
