@@ -15,7 +15,7 @@ use warnings;
 
 require 5.006;
 
-our $VERSION = '9.06';
+our $VERSION = '9.16';
 
 sub takeover_signals {
   $SIG{__DIE__} = sub { print STDERR "?\n"; exit 255 };
