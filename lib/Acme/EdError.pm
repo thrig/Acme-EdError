@@ -3,7 +3,7 @@
 # Implements ed(1) error handling. Run perldoc(1) on this module for
 # additional documentation.
 #
-# Copyright 2009,2012-2013 by Jeremy Mates.
+# Copyright 2009,2012-2013,2015 by Jeremy Mates.
 #
 # This module is free software; you can redistribute it and/or modify it
 # under the Artistic license.
@@ -15,7 +15,7 @@ use warnings;
 
 require 5.006;
 
-our $VERSION = '9.16';
+our $VERSION = '9.17';
 
 sub takeover_signals {
   $SIG{__DIE__} = sub { print STDERR "?\n"; exit 255 };
@@ -72,9 +72,9 @@ thrig - Jeremy Mates (cpan:JMATES) C<< <jmates at cpan.org> >>
 
 =head1 COPYRIGHT
 
-Copyright 2009,2012-2013 by Jeremy Mates.
+Copyright 2009,2012-2013,2015 by Jeremy Mates.
 
 This module is free software; you can redistribute it and/or modify it
-under the Artistic license.
+under the Artistic License (2.0).
 
 =cut
